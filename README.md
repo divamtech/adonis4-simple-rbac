@@ -3,7 +3,8 @@
 ## Install
 
 ```bash
-npm i adonis-rbac@git+https://git@github.com/zspecza/common-tags.git
+unsetopt nomatch # run only if you are using zsh
+npm i adonis-rbac@git+https://git@github.com/divamtech/adonis-rbac.git#master
 ```
 
 ## Setup
