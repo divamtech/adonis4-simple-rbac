@@ -3,7 +3,7 @@
 ## Install
 
 ```bash
-npm i https://github.com/divamtech/adonis-rbac
+npm i adonis-rbac@git+https://git@github.com/zspecza/common-tags.git
 ```
 
 ## Setup
