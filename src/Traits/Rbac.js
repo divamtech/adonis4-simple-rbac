@@ -32,6 +32,10 @@ module.exports = class Rbac {
       if (!this.roles) {
         return false;
       }
+      const perms = this.getPermissions();
+      if (perms.includes('*')) {
+        return true;
+      }
       return this.roles.includes(r);
     };
 
