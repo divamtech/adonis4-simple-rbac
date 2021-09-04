@@ -28,9 +28,12 @@ module.exports = class Rbac {
       return [...perms]
     }
 
-    Model.prototype.isRole = function () {
-      return true
-    }
+    Model.prototype.hasRole = function (r) {
+      if (!this.roles) {
+        return false;
+      }
+      return this.roles.includes(r);
+    };
 
     Model.prototype.can = function (permission) {
       const perms = this.getPermissions()
